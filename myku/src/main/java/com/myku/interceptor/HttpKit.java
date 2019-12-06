@@ -3,10 +3,8 @@ package com.myku.interceptor;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.os.Build;
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import com.myku.R;
 
 import java.util.concurrent.TimeUnit;
 

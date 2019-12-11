@@ -40,7 +40,7 @@ class Load {
                 .build()
 
             val retrofit = Retrofit.Builder()
-                .baseUrl("https://jitpack.io/api/builds/com.github.tz-xbestdog")//baseURL提倡以“/”结尾
+                .baseUrl("https://jitpack.io/api/builds/com.github.tz-xbestdog/")//baseURL提倡以“/”结尾
                 .client(client)//设置okhttp
                 .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava

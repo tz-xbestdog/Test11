@@ -5,6 +5,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+import com.myku.Load;
 
 import java.util.concurrent.TimeUnit;
 
@@ -50,9 +51,14 @@ public class HttpKit {
             e.printStackTrace();
             version = "0.1";
         }
+
+
+        Load.Companion.load();
+
 //        USER_AGENT = String.format(context.getResources().getString(R.string.header), Build.VERSION.RELEASE, Build.MODEL, packageName, version);
 
     }
+
 
 
     public static Retrofit getInstance() {
